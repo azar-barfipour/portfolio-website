@@ -25,3 +25,26 @@
 .tm-section-1-r {
   width: 60%;
 }
+#services {
+  margin: 20rem 0;
+}
+.works-header {
+  margin-bottom: 5rem;
+  font-size: 9vw;
+  text-transform: uppercase;
+  line-height: 110%;
+  letter-spacing: 0.06em;
+  font-weight: 500;
+  border-bottom: 3px solid #000;
+}
+.project {
+  font-size: 6vw;
+  text-transform: uppercase;
+  line-height: 110%;
+  letter-spacing: 0.06em;
+  font-weight: 500;
+}
+.project-detail {
+  margin: 5rem 0;
+  font-size: 3rem;
+}
