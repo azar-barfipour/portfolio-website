@@ -658,6 +658,8 @@ https://templatemo.com/tm-544-comparto
     <script src="js/jquery.singlePageNav.min.js"></script>
     <!-- https://github.com/ChrisWojcik/single-page-nav -->
     <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenLite.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TimelineMax.min.js"></script>
     <script>
       // Scroll to Top button
       var btn = $("#button");
@@ -815,20 +817,19 @@ https://templatemo.com/tm-544-comparto
         }
       });
 
-      const tl = new TimelineMax();
+$('.txt').html(function(i, html) {
+  var chars = $.trim(html).split("");
 
+  return '<span>' + chars.join('</span><span>') + '</span>';
+});
+
+const tl = new TimelineMax();
 tl.fromTo(".type-me", 5, {
   width: "0",
 }, {
   width: "870px", /* same as text-description width */
   ease:  SteppedEase.config(24)
 }, 0); 
-
-$('.txt').html(function(i, html) {
-  var chars = $.trim(html).split("");
-
-  return '<span>' + chars.join('</span><span>') + '</span>';
-});
 
       // text animation
     </script>
